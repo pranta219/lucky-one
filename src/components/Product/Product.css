@@ -29,6 +29,8 @@
     border: none;
     position: absolute;
     bottom: 0;
+    font-weight: 600;
+    color: azure;
 }
 .btn:hover{
     background-color: #31d7f5;

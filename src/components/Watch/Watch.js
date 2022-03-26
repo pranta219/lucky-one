@@ -1,24 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faRemove } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingBag, faRemove } from '@fortawesome/free-solid-svg-icons';
 import './Watch.css'
 
-const Watch = ({ cart }) => {
+const Watch = ({ cart, resetBtn }) => {
     let chooseOne = () => {
         let arrLength = cart.length
-        let rendomProducts = Math.ceil(Math.random() * arrLength)
+        let rendomProducts = Math.floor(Math.random() * arrLength)
         alert(cart[rendomProducts].name)
     }
 
-    let resetBtn = () => {
-        let remove = cart
-        let removeBtn = remove
-        removeBtn([])
-    }
+
     return (
         <div className='watch'>
-            <h2>Cart
-                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
+            <h2>Cart <span>
+                <FontAwesomeIcon icon={faShoppingBag}></FontAwesomeIcon>
+            </span>
+
             </h2>
             {cart.map(cartItem => <div className="cart-content"
                 key={cartItem.id}>

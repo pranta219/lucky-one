@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import Watch from '../Watch/Watch';
@@ -18,6 +17,9 @@ const Store = () => {
         let newCart = [...cart, product]
         setCart(newCart)
     }
+    let resetBtn = () => {
+        setCart([])
+    }
     return (
         <div className='shop-container'>
             <div className="products-container">
@@ -30,7 +32,7 @@ const Store = () => {
                 }
             </div>
             <div className="cart-container">
-                <Watch cart={cart}></Watch>
+                <Watch cart={cart} resetBtn={resetBtn}></Watch>
             </div>
         </div>
     );
