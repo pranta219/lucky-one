@@ -4,7 +4,12 @@ import { faShoppingCart, faRemove } from '@fortawesome/free-solid-svg-icons';
 import './Watch.css'
 
 const Watch = ({ cart }) => {
+    let chooseOne = () => {
+        let arrLength = cart.length
+        let rendomProducts = Math.ceil(Math.random() * arrLength)
+        alert(cart[rendomProducts].name)
 
+    }
     return (
         <div className='watch'>
             <h2>Cart
@@ -14,7 +19,7 @@ const Watch = ({ cart }) => {
                 key={cartItem.id}>
                 <img className='cart-image' src={cartItem.img} alt='' />
                 <p> {cartItem.name}</p> </div>)}
-            <button className='choose'>
+            <button onClick={chooseOne} className='choose'>
                 <p>CHOOSE 1 FOR ME</p>
             </button>
             <br />
