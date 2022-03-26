@@ -1,0 +1,35 @@
+.product{
+    width: 300px;
+    height: 465px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: rgba(56, 165, 150, 0.664) 0px 5px 15px;
+}
+.name{
+    font-family: "Gill Sans", sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 0 14px;
+}
+.name p{
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 5;
+}
+.product img{
+    width: 286px;
+    height: 286px;
+    border-radius: 8px;
+    margin: 7px;
+}
+.btn{
+    width: 100%;
+    background-color: #2dd3b7;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+}
+.btn:hover{
+    background-color: #31d7f5;
+}
