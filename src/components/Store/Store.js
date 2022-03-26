@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import Watch from '../Watch/Watch';
 import './Store.css'
 
 const Store = () => {
@@ -30,10 +30,7 @@ const Store = () => {
                 }
             </div>
             <div className="cart-container">
-                <h2>Cart
-                    <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-                </h2>
-                <p>{cart.length}</p>
+                <Watch cart={cart}></Watch>
             </div>
         </div>
     );
