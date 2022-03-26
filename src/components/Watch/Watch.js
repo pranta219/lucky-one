@@ -8,7 +8,12 @@ const Watch = ({ cart }) => {
         let arrLength = cart.length
         let rendomProducts = Math.ceil(Math.random() * arrLength)
         alert(cart[rendomProducts].name)
+    }
 
+    let resetBtn = () => {
+        let remove = cart
+        let removeBtn = remove
+        removeBtn([])
     }
     return (
         <div className='watch'>
@@ -23,9 +28,8 @@ const Watch = ({ cart }) => {
                 <p>CHOOSE 1 FOR ME</p>
             </button>
             <br />
-            <button className='remove'>
-                <p>RESET
-                    <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon>
+            <button onClick={resetBtn} className='remove'>
+                <p>RESET <span><FontAwesomeIcon icon={faRemove}></FontAwesomeIcon></span>
                 </p>
             </button>
         </div>
