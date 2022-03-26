@@ -1,0 +1,21 @@
+.watch{
+    position: sticky;
+    top: 0;
+    padding: 30px 20px;
+}
+.choose{
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+    background:#2dd3b7;
+    color: aliceblue;
+}
+.remove{
+    border: none;
+    border-radius: 5px;
+    background: rgb(209, 52, 52);
+    color: aliceblue;
+}
+.cart-image{
+    width: 50px;
+}
